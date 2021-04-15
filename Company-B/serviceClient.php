@@ -4,8 +4,8 @@ class serviceClient {
 
     public function __construct() {
         $params = [
-            "location" => "http://soap-example.test/serviceProvider.php",
-            "uri" => "urn://soap-example.test/serviceProvider.php",
+            "location" => "http://soap-example.test/Company-A/serviceProvider.php",
+            "uri" => "urn://soap-example.test/Company-A/serviceProvider.php",
             "trace" => 1
         ];
 
