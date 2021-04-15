@@ -23,18 +23,18 @@ $cars = $client->getCarList();
 </head>
 <body>
     <div class="container">
-        <h1 class="my-5">List of the cars, provided by SOAP serviceProvider</h1>
+        <h1 class="my-5">List of the cars, provided by Company-A over SOAP</h1>
         <div class="row">
 
             <?php foreach($cars as $car) {
                 echo '<div class="col-4">
                         <div class="card my-2">
-                            <img src="'.$car['image'].'" class="card-img-top" alt="...">
+                            <img src="'.$car['image'].'" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">'.$car['brand'].'</h5>
+                                <h5 class="card-title">'.$car['name'].'</h5>
                                 <p class="card-text"><b>Price:</b> <span class="text-success">'.$car['price'].'</span></p>
                                 <p class="card-text"><b>Year:</b> <span class="">'.$car['year'].'</span></p>
-                                <p class="card-text"><b>Condition:</b> <span class="">'.$car['condition'].'</span></p>
+                                <p class="card-text"><b>Condition:</b> <span class="text-muted">'.$car['condition'].'</span></p>
                                 <a href="#" class="btn btn-primary">Buy</a>
                             </div>
                         </div>
